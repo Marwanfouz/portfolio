@@ -1,31 +1,31 @@
-import React, { useEffect, useState } from "react";
-import Logo from "./logo";
-import Link from "next/link";
-import ThemeSelector from "@/components/library/themeSelector";
-import Dropdown from "@/components/library/dropdown";
-import { CgWebsite, CgProfile, CgMail, CgPen } from "react-icons/cg";
-import { debounce } from "@/utils/debounce";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from 'react';
+import Logo from './logo';
+import Link from 'next/link';
+import ThemeSelector from '@/components/library/themeSelector';
+import Dropdown from '@/components/library/dropdown';
+import { CgWebsite, CgProfile, CgMail, CgPen } from 'react-icons/cg';
+import { debounce } from '@/utils/debounce';
+import { motion } from 'framer-motion';
 
-const styles = require("./navBar.module.scss");
+const styles = require('./navBar.module.scss');
 
 type NavBarProps = {};
 
 const NavBar = (props: NavBarProps) => {
   const navItems = [
     {
-      name: "projects",
-      link: "/#projects",
+      name: 'projects',
+      link: '/#projects',
       icon: <CgWebsite />,
     },
     {
-      name: "blog",
-      link: "/blog",
+      name: 'work-experience',
+      link: '/blog',
       icon: <CgPen />,
     },
     {
-      name: "contact",
-      link: "/#contact",
+      name: 'contact',
+      link: '/#contact',
       icon: <CgMail />,
     },
   ];
@@ -51,9 +51,9 @@ const NavBar = (props: NavBarProps) => {
       setPrevScrollPos(currentScrollPos);
     }, 100);
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, showNav, scrollAtTop]);
 
   const navVariants = {
@@ -65,7 +65,7 @@ const NavBar = (props: NavBarProps) => {
     },
     scrolled: {
       top: 0,
-      boxShadow: "var(--shadow-elevation-medium)",
+      boxShadow: 'var(--shadow-elevation-medium)',
     },
   };
 
@@ -73,16 +73,16 @@ const NavBar = (props: NavBarProps) => {
     <motion.nav
       className={styles.navContainer}
       variants={navVariants}
-      initial={"top"}
-      animate={!showNav ? "hide" : scrollAtTop ? "top" : "scrolled"}
+      initial={'top'}
+      animate={!showNav ? 'hide' : scrollAtTop ? 'top' : 'scrolled'}
       layout
       transition={{
         delay: 0.2,
         duration: 0.5,
-        ease: "easeInOut",
+        ease: 'easeInOut',
       }}
     >
-      <Link href={"/"}>
+      <Link href={'/'}>
         <Logo />
       </Link>
       <div className={styles.linksContainerSmall}>

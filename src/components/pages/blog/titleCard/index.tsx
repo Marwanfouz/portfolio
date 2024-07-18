@@ -1,12 +1,12 @@
-import React from "react";
-import Image from "next/image";
-import Parallax from "@/components/library/parallax";
-import WaveTitle from "@/components/library/waveTitle";
-import RevealOnScroll from "@/components/library/revealOnScroll";
-import { PostMeta } from "@/types/post";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import React from 'react';
+import Image from 'next/image';
+import Parallax from '@/components/library/parallax';
+import WaveTitle from '@/components/library/waveTitle';
+import RevealOnScroll from '@/components/library/revealOnScroll';
+import { PostMeta } from '@/types/post';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
-const styles = require("./titleCard.module.scss");
+const styles = require('./titleCard.module.scss');
 
 type TitleCardProps = {
   meta: PostMeta;
@@ -49,12 +49,12 @@ const TitleCard: React.FC<TitleCardProps> = ({ meta }) => {
             </RevealOnScroll>
             <div className={styles.linkContainer}>
               {meta.githubLink && (
-                <a href={meta.githubLink}>
+                <a href={meta.githubLink} target="_blank" rel="noreferrer">
                   <FaGithub />
                 </a>
               )}
               {meta.externalLink && (
-                <a href={meta.externalLink}>
+                <a href={meta.externalLink} target="_blank" rel="noreferrer">
                   <FaExternalLinkAlt />
                 </a>
               )}

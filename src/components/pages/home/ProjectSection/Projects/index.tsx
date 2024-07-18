@@ -1,9 +1,7 @@
-import { StaticImageData } from "next/image";
-import Cofffee from "../../../../../../public/assets/cofffeeProjectImage.jpg";
-import Topple from "../../../../../../public/assets/toppleProjectImage.png";
-import Dabitts from "../../../../../../public/assets/dabittsProjectImage.png";
-import Letter from "../../../../../../public/assets/letterProjectImage.png";
-import Lightbulb from "../../../../../../public/assets/lightbulbProjectImage.png";
+import { StaticImageData } from 'next/image';
+import ecommerce from '../../../../../../public/assets/ecommerceProjectImage.png';
+import TodoTrek from '../../../../../../public/assets/todoTrekProjectImage.png';
+import Mood from '../../../../../../public/assets/MoodProjectImage.png';
 
 export type ProjectDetails = {
   title: string;
@@ -17,54 +15,43 @@ export type ProjectDetails = {
 
 const projects: ProjectDetails[] = [
   {
-    title: "Letter Loco!",
-    image: Letter,
+    title: 'Mood',
+    image: Mood,
     description:
-      "If you're a fan of word games you should checkout the crazy hard one I made for IOS while I was learning Swift.",
-    skills: ["SwiftUI", "Core Data", "CloudKit", "Python"],
-    blogLink:
-      "https://apps.apple.com/us/app/letter-loco/id6448546757?platform=iphone",
-    externalLink:
-      "https://apps.apple.com/us/app/letter-loco/id6448546757?platform=iphone",
+      'A mood tracking app that allows you to log your mood and activities throughout the day.',
+    skills: [
+      'Next.js',
+      'Gemini API',
+      'Typescript',
+      'Clerk',
+      'Recharts',
+      'Neon',
+      'Prisma',
+      'Vitest',
+      'Zod',
+    ],
+    blogLink: 'https://fullstack-ai-nextjs-two-blush.vercel.app/',
+    githubLink: 'https://github.com/Marwanfouz/fullstack-ai-nextjs',
+    externalLink: 'https://fullstack-ai-nextjs-two-blush.vercel.app/',
   },
   {
-    title: "dabitts",
-    image: Dabitts,
+    title: 'TodoTrek',
+    image: TodoTrek,
     description:
-      "A low friction habit tracking app with analytics on where and how you have been spending the majority of your time.",
-    skills: ["Typescript", "Next.js", "Node", "Postgres", "Prisma"],
-    blogLink: "/blog/dabitts",
-    githubLink: "https://github.com/Augericke/dabitt-backend",
-    externalLink: "https://www.dabitts.com/",
-  },
-  // {
-  //   title: "lightbulb.fyi",
-  //   image: Lightbulb,
-  //   description:
-  //     "Freelanced as a fullstack software engineer for lightbulb.fyi - a platform connecting knowledge workers and their audience through question and answer prompts.",
-  //   skills: ["Typescript", "Next.js", "Postgres", "Stripe"],
-  //   blogLink: "https://www.lightbulb.fyi/",
-  //   externalLink: "https://www.lightbulb.fyi/",
-  // },
-  {
-    title: "Cofffee Shop",
-    image: Cofffee,
-    description:
-      "A weekend project using OpenAi's image and text generation tools to create a completely prompted coffee shop website.",
-    skills: ["Typescript", "Next.js", "SCSS"],
-    blogLink: "/blog/cofffee-shop",
-    githubLink: "https://github.com/Augericke/cofffee-shop",
-    externalLink: "https://cofffee-shop.vercel.app/",
+      "If you need a simple todo list app that's easy to use and has a beautiful design, TodoTrek is the app for you!",
+    skills: ['Nextjs', 'MUI', 'Firebase', 'Typescript', 'React-hook-form'],
+    githubLink: 'https://github.com/Marwanfouz/TodoTrek',
+    blogLink: 'https://todo-list-tawny-phi.vercel.app',
+    externalLink: 'https://todo-list-tawny-phi.vercel.app',
   },
   {
-    title: "Topple Debacle",
-    image: Topple,
+    title: 'E-commerce',
+    image: ecommerce,
     description:
-      "A daily word puzzle where you need to clear the grid by spelling connected words.",
-    skills: ["Typescript", "React", "Framer Motion", "SCSS"],
-    blogLink: "/blog/topple-debacle",
-    githubLink: "https://github.com/Augericke/topple-debacle",
-    externalLink: "https://topple-debacle.vercel.app/",
+      'A burger shop e-commerce site that allows you to browse and purchase buger.',
+    skills: ['Typescript', 'React', 'bootstrap', 'Redux', 'Scss', 'stripe'],
+    blogLink: '/https://github.com/Marwanfouz/E-commerce-REACT-PROJECT',
+    githubLink: 'https://github.com/Marwanfouz/E-commerce-REACT-PROJECT',
   },
 ];
 

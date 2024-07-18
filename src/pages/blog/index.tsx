@@ -28,9 +28,9 @@ export default function Blog({
   return (
     <Layout
       pageMeta={{
-        title: "Austin Gericke | Blog",
+        title: 'Marwan Fouz | work-experince',
         description:
-          "This is where I write about my projects or other random things I have learned.",
+          'This is where I write about my work experince or other random things I have learned.',
       }}
     >
       <BlogsView posts={posts} />

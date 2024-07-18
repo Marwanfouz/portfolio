@@ -10,15 +10,27 @@ const Footer = (props: FooterProps) => {
     <div className={styles.footerContainer}>
       <div className={styles.iconsContainer}>
         <a
-          href="https://www.linkedin.com/in/austingericke/"
+          href="https://www.linkedin.com/in/marwan-fouz-a319ba252/"
+          target="_blank"
+          rel="noreferrer"
           className={styles.icon}
         >
           <FaLinkedinIn />
         </a>
-        <a href="https://github.com/Augericke" className={styles.icon}>
+        <a
+          href="https://github.com/Marwanfouz"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.icon}
+        >
           <FaGithub />
         </a>
-        <a href="https://twitter.com/augericke" className={styles.icon}>
+        <a
+          href="https://x.com/Marooo_72"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.icon}
+        >
           <FaTwitter />
         </a>
       </div>

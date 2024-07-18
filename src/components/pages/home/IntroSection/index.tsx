@@ -43,7 +43,7 @@ const IntroSection = () => {
             wordDelay={0.1}
           />
           <WaveTitle
-            title="Austin Gericke."
+            title="Marwan Fouz."
             customClassName={styles.introName}
             initialDelay={12}
             wordDelay={0.1}
@@ -51,7 +51,7 @@ const IntroSection = () => {
 
           <RevealOnScroll delay={2.2}>
             <p className={styles.aboutText}>
-              I&apos;m an analytics engineer and web developer who likes to make
+              I&apos;m an web developer who likes to make
               random projects and put them on the internet.
             </p>
           </RevealOnScroll>

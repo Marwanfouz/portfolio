@@ -14,9 +14,9 @@ type PostProps = {
 
 const Post: React.FC<PostProps> = ({ children, meta }) => {
   const pageMeta = {
-    title: `Austin Gericke | ${meta.title}`,
+    title: `Marwan Fouz | ${meta.title}`,
     description: meta.abstract,
-    url: `https://austingericke.com/${meta.slug}`,
+    url: `https://Marwan Fouz.com/${meta.slug}`,
   };
 
   return (

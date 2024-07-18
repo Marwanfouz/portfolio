@@ -4,26 +4,25 @@
 
   &Dark {
     @extend .logoContainer;
-    transform: rotate(180deg);
   }
 }
 
-.austin {
+.Marwan {
   fill: var(--opposite-background-color);
   transition: all 1s;
 
   &Dark {
-    @extend .austin;
+    @extend .Marwan;
     fill: white;
   }
 }
 
-.gericke {
+.fouz {
   fill: white;
   transition: all 1s;
 
   &Dark {
-    @extend .austin;
+    @extend .Marwan;
     fill: var(--opposite-background-color);
   }
 }

@@ -1,0 +1,65 @@
+import React from 'react';
+import HeaderImage from '@assets/tybaProjectImage.png';
+import Post from '@/components/pages/blog/post';
+import ExampleImage from '@/components/library/blog/exampleImage';
+import Shop from '@assets/tyba/image1.png';
+import Cups from '@assets/tyba/image.png';
+
+export const meta = {
+  isPublished: true,
+  title: 'Tyba Transportation',
+  headerImage: HeaderImage,
+  abstract: 'Reservation and booking of transportation services',
+  tags: ['Typescript', 'Next.js', 'bootstrap', 'Firebase'],
+  slug: 'blog/tyba-transportation',
+  externalLink: 'https://tybatransportation.com/',
+  publishedDate: '2024-07-01',
+};
+
+# Welcome to Tyba Transportation
+
+Creating a comprehensive platform for transportation services was an exciting challenge. The Tyba Transportation project allowed me to explore various technologies and implement several key features to enhance the user experience.
+
+You can visit the site [here](https://tybatransportation.com/).
+
+<ExampleImage
+  imagePath={Shop.src}
+  alt="Transportation booking and reservation platform"
+  caption="Example of the Tyba Transportation website pricing page"
+/>
+
+### Project Overview
+
+Tyba Transportation is a platform designed for booking and reserving transportation services. The website features a user-friendly interface and a robust admin panel that allows administrators to manage cars, edit pricing, add blog posts, and update contact information.
+
+### Key Features
+
+**Admin Page**: The admin page is a central hub where administrators can:
+
+- **Manage Cars**: Add, edit, or remove cars from the fleet.
+- **Edit Pricing**: Update the pricing for various transportation services.
+- **Add Blogs**: Post new blogs and keep customers informed about the latest updates and offers.
+- **Change Contact Numbers**: Update contact information to ensure customers have the latest details.
+
+<ExampleImage
+  imagePath={Cups.src}
+  alt="Admin panel for managing cars and pricing"
+  caption="edit cars page in Admin panel interface"
+/>
+
+### Technologies Used
+
+- **Typescript**: Ensuring type safety and reducing bugs.
+- **Next.js**: For server-side rendering and enhanced performance.
+- **Bootstrap**: Providing a responsive and mobile-first design.
+- **Firebase**: Handling authentication and real-time database updates.
+
+### Challenges and Achievements
+
+Building the Tyba Transportation platform came with its own set of challenges. Ensuring seamless integration of the admin features while maintaining a user-friendly interface was crucial. However, overcoming these challenges was incredibly rewarding, and the final product is a robust and scalable transportation booking system.
+
+### Conclusion
+
+The Tyba Transportation project showcases my ability to build a complete web application with both frontend and backend components. The experience gained from this project has been invaluable, and I am excited to apply these skills to future projects.
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>;

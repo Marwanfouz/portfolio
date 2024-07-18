@@ -1,12 +1,12 @@
 // credit to: https://samuelkraft.com/blog/spring-parallax-framer-motion-guide
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import {
   useScroll,
   motion,
   useTransform,
   useSpring,
   useReducedMotion,
-} from "framer-motion";
+} from 'framer-motion';
 
 type ParallaxProps = {
   children: React.ReactElement;
@@ -47,8 +47,8 @@ const Parallax: React.FC<ParallaxProps> = ({
       setClientHeight(window.innerHeight);
     };
     onResize();
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
   }, [ref]);
 
   // Don't parallax if the user has "reduced motion" enabled
