@@ -42,8 +42,8 @@ const Layout: React.FC<LayoutProps> = ({ children, pageMeta }) => {
       <meta name="twitter:image:alt" content={meta.imageAlt} />
       <meta name="twitter:title" content={meta.title} />
       <meta property="twitter:description" content={meta.description} />
-      <meta property="twitter:site" content="@aufouz" />
-      <meta property="twitter:creator" content="@aufouz" />
+      <meta property="twitter:site" content="@Marooo_72" />
+      <meta property="twitter:creator" content="@Marooo_72" />
       <meta name="twitter:card" content="summary_large_image" />
       <link rel="icon" href="/favicon.ico" />
     </Head>

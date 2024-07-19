@@ -12,6 +12,7 @@ const Footer = (props: FooterProps) => {
         <a
           href="https://www.linkedin.com/in/marwan-fouz-a319ba252/"
           target="_blank"
+          aria-label="linkedin"
           rel="noreferrer"
           className={styles.icon}
         >
@@ -20,6 +21,7 @@ const Footer = (props: FooterProps) => {
         <a
           href="https://github.com/Marwanfouz"
           target="_blank"
+          aria-label="github"
           rel="noreferrer"
           className={styles.icon}
         >
@@ -28,6 +30,7 @@ const Footer = (props: FooterProps) => {
         <a
           href="https://x.com/Marooo_72"
           target="_blank"
+          aria-label="twitter"
           rel="noreferrer"
           className={styles.icon}
         >

@@ -11,7 +11,7 @@ const HomeView = () => {
       <ProjectSection />
       <RevealOnScroll customClass={styles.contactContainer}>
         <>
-          <a href="mailto:Marwanfouz76@gmail.com">hi</a>
+          <a href="mailto:Marwanfouz76@gmail.com" aria-label="mail to contact">hi</a>
           <p id="contact">
             My inbox is always open - so if you want to work together on
             something don&apos;t be afraid to say hi.

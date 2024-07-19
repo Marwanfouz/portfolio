@@ -71,12 +71,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
               <div className={styles.linksContainer}>
                 {projectDetails.githubLink && (
-                  <a href={projectDetails.githubLink}>
+                  <a href={projectDetails.githubLink} aria-label="github link">
                     <FaGithub />
                   </a>
                 )}
                 {projectDetails.externalLink && (
-                  <a href={projectDetails.externalLink}>
+                  <a
+                    href={projectDetails.externalLink}
+                    aria-label="project details link"
+                  >
                     <FaExternalLinkAlt />
                   </a>
                 )}

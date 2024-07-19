@@ -49,12 +49,12 @@ const TitleCard: React.FC<TitleCardProps> = ({ meta }) => {
             </RevealOnScroll>
             <div className={styles.linkContainer}>
               {meta.githubLink && (
-                <a href={meta.githubLink} target="_blank" rel="noreferrer">
+                <a href={meta.githubLink} target="_blank" rel="noreferrer" aria-label='github link'>
                   <FaGithub />
                 </a>
               )}
               {meta.externalLink && (
-                <a href={meta.externalLink} target="_blank" rel="noreferrer">
+                <a href={meta.externalLink} target="_blank" rel="noreferrer" aria-label='project link'>
                   <FaExternalLinkAlt />
                 </a>
               )}
