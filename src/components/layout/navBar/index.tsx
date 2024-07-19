@@ -82,7 +82,7 @@ const NavBar = (props: NavBarProps) => {
         ease: 'easeInOut',
       }}
     >
-      <Link href={'/'}>
+      <Link href={'/'} aria-label='home page'>
         <Logo />
       </Link>
       <div className={styles.linksContainerSmall}>
@@ -92,6 +92,7 @@ const NavBar = (props: NavBarProps) => {
             ...navItems.map((item) => {
               return (
                 <Link
+                  aria-label={item.name}
                   key={item.name}
                   href={item.link}
                   className={styles.dropdownItemContainer}
@@ -110,7 +111,7 @@ const NavBar = (props: NavBarProps) => {
       <div className={styles.linksContainerLarge}>
         {navItems.map((item) => {
           return (
-            <Link key={item.name} href={item.link}>
+            <Link key={item.name} href={item.link} aria-label={item.name}>
               {item.name}
             </Link>
           );

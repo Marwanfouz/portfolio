@@ -21,6 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className={styles.projectContainer}>
       <Link
+        aria-label={projectDetails.title}
         href={projectDetails.blogLink}
         className={
           rightOriented

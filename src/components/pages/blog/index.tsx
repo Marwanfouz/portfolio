@@ -27,7 +27,12 @@ const BlogsView: React.FC<BlogsViewProps> = ({ posts }) => {
             const formattedDate = format(parseISO(publishedDate), "MMM, yyyy");
 
             return (
-              <Link key={slug} className={styles.post} href={slug}>
+              <Link
+                key={slug}
+                className={styles.post}
+                href={slug}
+                aria-label={slug}
+              >
                 <div className={styles.infoContainer}>
                   <h2>{title}</h2>
                   <div className={styles.tagsContainer}>
