@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image';
 import ecommerce from '../../../../../../public/assets/ecommerceProjectImage.png';
+import pardy from '../../../../../../public/assets/pardyProjectImage.png';
 import TodoTrek from '../../../../../../public/assets/todoTrekProjectImage.png';
 import Mood from '../../../../../../public/assets/MoodProjectImage.png';
 
@@ -45,12 +46,32 @@ const projects: ProjectDetails[] = [
     externalLink: 'https://todo-list-tawny-phi.vercel.app',
   },
   {
+    title: 'Pardy',
+    image: pardy,
+    description:
+      'Pardy is a comprehensive event management application designed to streamline the process of organizing and tracking events.\
+      With a user- friendly interface and powerful features, Pardy makes it easy to create, manage, and monitor events, as well as manage guest lists and RSVPs.',
+    skills: [
+      'Typescript',
+      'Nextjs',
+      'NextUI',
+      'Drizzle ORM',
+      'Tailwind CSS',
+      'Bcrypt',
+      'JWT',
+      'Zod',
+    ],
+    blogLink: 'https://github.com/Marwanfouz/pardy',
+    githubLink: 'https://github.com/Marwanfouz/pardy',
+    externalLink: 'https://pardy.vercel.app',
+  },
+  {
     title: 'E-commerce',
     image: ecommerce,
     description:
       'A burger shop e-commerce site that allows you to browse and purchase buger.',
     skills: ['Typescript', 'React', 'bootstrap', 'Redux', 'Scss', 'stripe'],
-    blogLink: '/https://github.com/Marwanfouz/E-commerce-REACT-PROJECT',
+    blogLink: 'https://github.com/Marwanfouz/E-commerce-REACT-PROJECT',
     githubLink: 'https://github.com/Marwanfouz/E-commerce-REACT-PROJECT',
   },
 ];
