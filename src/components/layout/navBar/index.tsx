@@ -28,6 +28,11 @@ const NavBar = (props: NavBarProps) => {
       link: '/#contact',
       icon: <CgMail />,
     },
+    {
+      name: 'CV',
+      link: 'https://drive.google.com/file/d/1xB9AsUHuHU5xUufmODuKglfr9Ke9n0Xw/view?usp=sharing',
+      icon: <CgProfile />,
+    },
   ];
 
   // State for hide/show nav on scroll
@@ -82,7 +87,7 @@ const NavBar = (props: NavBarProps) => {
         ease: 'easeInOut',
       }}
     >
-      <Link href={'/'} aria-label='home page'>
+      <Link href={'/'} aria-label="home page">
         <Logo />
       </Link>
       <div className={styles.linksContainerSmall}>
