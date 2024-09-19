@@ -1,0 +1,50 @@
+import React from 'react';
+import HeaderImage from '@assets/LinkedClaims.png';
+import Post from '@/components/pages/blog/post';
+import ExampleImage from '@/components/library/blog/exampleImage';
+import Shop from '@assets/linkedClaim/image1.png';
+import Cups from '@assets/linkedClaim/image.png';
+
+export const meta = {
+  isPublished: true,
+  title: 'Linked Claims',
+  headerImage: HeaderImage,
+  abstract:
+    'contains narratives and example verifiable credentials for use cases from disaster recovery to microcredentials. In particular, having the ability of the recipients to attest to impact is a powerful model. Combining reputation across domains results in a more resilient trust model.',
+  tags: ['Typescript', 'React.js', 'MUI', 'Nodejs'],
+  slug: 'blog/Linked-Claims',
+  externalLink: 'https://live.linkedtrust.us/',
+  publishedDate: '2024-07-01',
+};
+
+# Welcome to Linked Claims
+
+Creating a comprehensive platform for creating cliams services was an exciting challenge with use graph.
+
+You can visit the site [here](https://live.linkedtrust.us/) for live demo.
+And You can visit the site [here](https://dev.linkedtrust.us/) for dev demo.
+
+<ExampleImage
+  imagePath={Shop.src}
+  alt="Linked Claims"
+  caption="create claims services"
+/>
+
+### Project Overview
+
+Linked Claims is a platform designed for creating cliams services was an exciting challenge with use graph. The website features a user-friendly interface.
+
+<ExampleImage
+  imagePath={Cups.src}
+  alt="Admin panel for managing cars and pricing"
+  caption="graph view of linked claims"
+/>
+
+### Technologies Used
+
+- **Typescript**: Ensuring type safety and reducing bugs.
+- **React.js**: For Front end development and enhanced performance.
+- **MUI**: Providing a responsive and mobile-first design.
+- **Nodejs**: Handling authentication and real-time database updates.
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>;

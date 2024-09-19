@@ -1,11 +1,11 @@
-import { PostMeta } from "@/types/post";
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import RevealOnScroll from "@/components/library/revealOnScroll";
-import { format, parseISO } from "date-fns";
+import { PostMeta } from '@/types/post';
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import RevealOnScroll from '@/components/library/revealOnScroll';
+import { format, parseISO } from 'date-fns';
 
-import styles from "./blog.module.scss";
+import styles from './blog.module.scss';
 
 type BlogsViewProps = {
   posts: PostMeta[];
@@ -24,7 +24,7 @@ const BlogsView: React.FC<BlogsViewProps> = ({ posts }) => {
               {
                 ...post,
               };
-            const formattedDate = format(parseISO(publishedDate), "MMM, yyyy");
+            const formattedDate = format(parseISO(publishedDate), 'MMM, yyyy');
 
             return (
               <Link
@@ -46,7 +46,7 @@ const BlogsView: React.FC<BlogsViewProps> = ({ posts }) => {
                 <RevealOnScroll customClass={styles.imageContainer}>
                   <Image
                     src={headerImage}
-                    alt={`Blog title image for the article: ${title}`}
+                    alt={`title image for the project: ${title}`}
                     placeholder="blur"
                     fill
                     priority={true}
