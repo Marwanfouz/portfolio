@@ -30,7 +30,7 @@ const NavBar = (props: NavBarProps) => {
     },
     {
       name: 'CV',
-      link: 'https://drive.google.com/file/d/1ZhQGXjUzgBTV7JwgffXaeSLjski9L9u_/view?usp=sharing',
+      link: 'https://drive.google.com/file/d/1klwfV1jh-wa3uwZpxIhwE5TYPkDxe4g8/view?usp=sharing',
       icon: <CgProfile />,
     },
   ];
