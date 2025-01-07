@@ -20,7 +20,7 @@ const NavBar = (props: NavBarProps) => {
     },
     {
       name: 'work-experience',
-      link: '/blog',
+      link: '/work-experience',
       icon: <CgPen />,
     },
     {
@@ -30,7 +30,7 @@ const NavBar = (props: NavBarProps) => {
     },
     {
       name: 'CV',
-      link: 'https://drive.google.com/file/d/1klwfV1jh-wa3uwZpxIhwE5TYPkDxe4g8/view?usp=sharing',
+      link: '/marwanfouz.pdf',
       icon: <CgProfile />,
     },
   ];

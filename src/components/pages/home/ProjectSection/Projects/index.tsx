@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image';
+import ecommercetemp from '../../../../../../public/assets/ecomemrceTemplate.png';
 import ecommerce from '../../../../../../public/assets/ecommerceProjectImage.png';
 import pardy from '../../../../../../public/assets/pardyProjectImage.png';
 import TodoTrek from '../../../../../../public/assets/todoTrekProjectImage.png';
@@ -15,6 +16,22 @@ export type ProjectDetails = {
 };
 
 const projects: ProjectDetails[] = [
+  {
+    title: 'E-commerce Template',
+    image: ecommercetemp,
+    description:
+      'A full-featured e-commerce platform with advanced product visualization, interactive shopping cart, and responsive design.',
+    skills: [
+      'Next.js',
+      'React.js',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'Swiper.js',
+      'Typescript',
+    ],
+    blogLink: 'https://ecommerce-app-eight-phi.vercel.app/',
+    externalLink: 'https://ecommerce-app-eight-phi.vercel.app/',
+  },
   {
     title: 'Mood',
     image: Mood,

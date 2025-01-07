@@ -1,0 +1,72 @@
+import React from 'react';
+import HeaderImage from '@assets/weboftrust/ui-lib.png';
+import Post from '@/components/pages/work-experience/post';
+import ExampleImage from '@/components/library/work-experience/exampleImage';
+import CLITool from '@assets/weboftrust/ui-lib.png';
+import UILib from '@assets/weboftrust/ui-lib.png';
+
+export const meta = {
+  isPublished: true,
+  title: 'Web of Trust UI Tools',
+  headerImage: HeaderImage,
+  abstract:
+    'Developed open-source tools for the Web of Trust ecosystem, including a CLI tool for rapid project setup and a comprehensive React UI library for credential management and authentication.',
+  tags: ['React.js', 'TypeScript', 'CLI', 'NPM Package', 'Open Source'],
+  slug: 'work-experience/web-of-trust-ui',
+  externalLink: 'https://www.npmjs.com/package/@web-of-trust/ui',
+  publishedDate: '2023-12-01',
+};
+
+**# Web of Trust UI Development Tools**
+
+As a Frontend Developer & Open Source Maintainer at LinkedTrust, I developed two key tools for the Web of Trust ecosystem:
+the `create-wot-app` CLI tool and the `@web-of-trust/ui` React component library.
+
+<ExampleImage
+  imagePath={CLITool.src}
+  alt="create-wot-app CLI Tool"
+  caption="CLI tool for rapid Web of Trust project setup"
+/>
+
+**### create-wot-app CLI Tool**
+
+The `create-wot-app` is a command-line interface tool designed to streamline the setup process for Web of Trust applications.
+Key features include:
+
+- Rapid project scaffolding
+- Pre-configured Web of Trust components
+- Built-in templates and best practices
+- Automated dependency management
+
+You can find the package on NPM [here](https://www.npmjs.com/package/create-wot-app).
+
+<ExampleImage
+  imagePath={UILib.src}
+  alt="Web of Trust UI Library"
+  caption="React component library for credential management"
+/>
+
+**### @web-of-trust/ui React Library**
+
+The `@web-of-trust/ui` is a comprehensive React component library that provides:
+
+- Credential management components
+- Authentication UI elements
+- Advanced theming support
+- Flexible data schema integration
+- Reusable UI components
+
+Check out the library on:
+
+- [NPM](https://www.npmjs.com/package/@web-of-trust/ui)
+- [GitHub](https://github.com/web-of-trust/ui)
+
+**### Technologies Used**
+
+- **React.js**: Building reusable UI components
+- **TypeScript**: Ensuring type safety and better developer experience
+- **Node.js**: CLI tool development
+- **NPM**: Package distribution and management
+- **Material-UI**: Theming and component base
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>;

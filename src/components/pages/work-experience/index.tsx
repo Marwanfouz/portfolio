@@ -7,11 +7,11 @@ import { format, parseISO } from 'date-fns';
 
 import styles from './blog.module.scss';
 
-type BlogsViewProps = {
+type WorkExperienceViewProps = {
   posts: PostMeta[];
 };
 
-const BlogsView: React.FC<BlogsViewProps> = ({ posts }) => {
+const WorkExperienceView: React.FC<WorkExperienceViewProps> = ({ posts }) => {
   return (
     <div className={styles.pageContainer}>
       <div className={styles.postsContainer}>
@@ -60,4 +60,4 @@ const BlogsView: React.FC<BlogsViewProps> = ({ posts }) => {
   );
 };
 
-export default BlogsView;
+export default WorkExperienceView;

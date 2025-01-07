@@ -1,16 +1,16 @@
-import Layout from "@/components/layout";
-import BlogsView from "@/components/pages/blog";
-import { PostMeta } from "@/types/post";
-import fs from "fs";
-import path from "path";
-import { InferGetStaticPropsType } from "next";
+import Layout from '@/components/layout';
+import WorkExperienceView from '@/components/pages/work-experience';
+import { PostMeta } from '@/types/post';
+import fs from 'fs';
+import path from 'path';
+import { InferGetStaticPropsType } from 'next';
 
 export async function getStaticProps() {
-  const postDirectory = path.join(process.cwd(), "src/pages/blog");
+  const postDirectory = path.join(process.cwd(), 'src/pages/work-experience');
   let postFilenames = fs.readdirSync(postDirectory);
   const postModules = await Promise.all(
     postFilenames
-      .filter((item) => item.endsWith(".mdx"))
+      .filter((item) => item.endsWith('.mdx'))
       .map(async (p) => import(`./${p}`)),
   );
   const postMetadata: PostMeta[] = postModules.map((m) => m.meta as PostMeta);
@@ -33,7 +33,7 @@ export default function Blog({
           'This is where I write about my work experince or other random things I have learned.',
       }}
     >
-      <BlogsView posts={posts} />
+      <WorkExperienceView posts={posts} />
     </Layout>
   );
 }
