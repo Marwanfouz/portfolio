@@ -1,7 +1,7 @@
-import React from "react";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import React from 'react';
+import { FaGithub, FaLinkedinIn, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
-const styles = require("./footer.module.scss");
+const styles = require('./footer.module.scss');
 
 type FooterProps = {};
 
@@ -9,6 +9,15 @@ const Footer = (props: FooterProps) => {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.iconsContainer}>
+        <a
+          href="https://wa.me/201201910413"
+          target="_blank"
+          aria-label="linkedin"
+          rel="noreferrer"
+          className={styles.icon}
+        >
+          <FaWhatsapp />
+        </a>
         <a
           href="https://www.linkedin.com/in/marwan-fouz-a319ba252/"
           target="_blank"
