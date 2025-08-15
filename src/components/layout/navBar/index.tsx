@@ -30,7 +30,7 @@ const NavBar = (props: NavBarProps) => {
     },
     {
       name: 'CV',
-      link: '/marwanfouz.pdf',
+      link: '/marwanfouz-cv.pdf',
       icon: <CgProfile />,
     },
   ];
