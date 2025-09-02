@@ -2,35 +2,69 @@ import React from 'react';
 import HeaderImage from '@assets/ecommerce.png';
 import Post from '@/components/pages/work-experience/post';
 import ExampleImage from '@/components/library/work-experience/exampleImage';
-import Shop from '@assets/ecommerce/ecommerce.png';
-import Cups from '@assets/ecommerce/ecommerce.png';
+import Checkout from '@assets/ecommerce/ecommerce.png';
+import Admin from '@assets/ecommerce/ecommerceAdmin.png';
 
 export const meta = {
   isPublished: true,
-  title: 'ecommerce',
+  title: 'Lynx – Premium E-Commerce Platform',
   headerImage: HeaderImage,
-  abstract: 'ecommerce',
+  abstract:
+    'Full-stack e-commerce with catalog, cart, checkout, admin, PWA, and analytics.',
   tags: [
-    'Typescript',
-    'Next 14',
+    'Full Stack',
+    'Next.js 15',
+    'TypeScript',
     'MUI',
     'Firebase',
-    'react-hook-form',
-    'react-dropzone',
-    'storybook',
+    'Supabase Storage',
+    'PWA',
+    'Firebase Analytics',
+    'Microsoft Clarity',
   ],
   slug: 'work-experience/ecommerce',
-  externalLink: 'https://commingsoon.com/',
-  publishedDate: '2024-07-01',
+  externalLink: 'https://lynxwear.app/',
+  publishedDate: '2025-08-28',
 };
 
-# Welcome to ecommerce
+# Lynx – Premium E-Commerce Platform
 
-Creating a comprehensive platform for shoping services was an exciting challenge with team of frontend and backend developers. This ecommerce project allowed me to explore various technologies and implement several key features to enhance the user experience.
-the project is a full-stack e-commerce platform that allows users to browse products, add them to the cart, and complete the checkout process. The platform also includes an admin panel where administrators can manage products, orders, and customers.
-but it sill in development stage and will be published soon.
+**Role:** Full Stack Developer · **Engagement:** Freelance · **Timeline:** Aug 2025 – present
 
-<ExampleImage imagePath={Shop.src} alt="comming soon" caption="comming soon" />
+<div
+  style={{ display: 'flex', gap: 12, flexWrap: 'wrap', margin: '12px 0 24px' }}
+>
+  <a
+    className="button primary"
+    href="https://lynxwear.app"
+    target="_blank"
+    rel="noreferrer"
+  >
+    View Live App
+  </a>
+  <a
+    className="button"
+    href="https://lynxwear.vercel.app"
+    target="_blank"
+    rel="noreferrer"
+  >
+    View Demo Storefront
+  </a>
+  <a
+    className="button"
+    href="https://lynxwear.vercel.app/admin"
+    target="_blank"
+    rel="noreferrer"
+  >
+    View Demo Admin
+  </a>
+</div>
+
+<ExampleImage
+  imagePath={Checkout.src}
+  alt="checkout page"
+  caption="checkout page"
+/>
 
 ### Project Overview
 
@@ -38,15 +72,25 @@ ecommerce app
 
 ### Key Features
 
-**Admin Page**: The admin page is a central hub where administrators can:
+- Built and deployed a responsive e-commerce platform with catalog, product detail, cart, secure checkout, and admin dashboard.
+- Stack: **Next.js 15**, **TypeScript**, **Shadcn/ui**, **Firebase** (Auth/Firestore), **Supabase Storage** for media.
 
-<ExampleImage imagePath={Cups.src} alt="comming soon" caption="comming soon" />
+<ExampleImage imagePath={Admin.src} alt="admin page" caption="admin page" />
 
 ### Technologies Used
 
-- **Typescript**: Ensuring type safety and reducing bugs.
-- **Next.js**: For server-side rendering and enhanced performance.
-- **MUI**: for design and theme Providing.
-- **Firebase**: Handling authentication and real-time database updates.
+- **Next.js 15** (App Router, Server Components, ISR) for performance and SEO.
+- **TypeScript** for type safety and enhanced developer experience.
+- **Shadcn/ui** for responsive and consistent UI components.
+- **Firebase** (Auth, Firestore) for authentication, roles, and real-time data.
+- **Supabase Storage** for product media and CDN delivery.
+- **PWA**: service worker, web manifest, caching strategies, push notifications.
+- **Analytics**: Microsoft Clarity session insights + Firebase Analytics events.
+
+### Links
+
+- Real app: <a href="https://lynxwear.app" target="_blank" rel="noreferrer">lynxwear.app</a>
+- Demo storefront: <a href="https://lynxwear.vercel.app" target="_blank" rel="noreferrer">lynxwear.vercel.app</a>
+- Demo admin: <a href="https://lynxwear.vercel.app/admin" target="_blank" rel="noreferrer">lynxwear.vercel.app/admin</a>
 
 export default ({ children }) => <Post meta={meta}>{children}</Post>;

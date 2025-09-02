@@ -1,0 +1,79 @@
+import React from 'react';
+import HeaderImage from '@assets/egytrains/header.png';
+import Post from '@/components/pages/work-experience/post';
+import ExampleImage from '@/components/library/work-experience/exampleImage';
+import Map from '@assets/egytrains/map.png';
+import MobileApp from '@assets/egytrains/mobileApp.png';
+
+export const meta = {
+  isPublished: true,
+  title: 'Egy Trains - Egyptian National Railways',
+  headerImage: HeaderImage,
+  abstract:
+    'Frontend contributions to an Egypt train schedules platform with SEO, performance optimization, PWA, and mobile-friendly UX.',
+  tags: [
+    'Frontend',
+    'Next.js 15',
+    'TypeScript',
+    'Tailwind CSS',
+    'Firebase',
+    'React 19',
+    'next-sitemap',
+    'PWA',
+    'SEO',
+    'Performance',
+  ],
+  slug: 'work-experience/egytrains',
+  externalLink: 'https://egytrains.com/',
+  publishedDate: '2025-02-01',
+};
+
+# Egy Trains - Egyptian National Railways
+
+**Role:** Frontend Developer · **Engagement:** Contributor · **Timeline:** Feb 2025 – Aug 2025 · **Location:** Remote
+
+<div
+  style={{ display: 'flex', gap: 12, flexWrap: 'wrap', margin: '12px 0 24px' }}
+>
+  <a
+    className="button primary"
+    href="https://egytrains.com/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    View Live App
+  </a>
+</div>
+
+<ExampleImage imagePath={Map.src} alt="map page" caption="map page" />
+
+### Project Overview
+
+Contributed to the **EgyTrains** web platform delivering schedules, routes, and train information for Egypt. Focused on **SEO, performance, and user experience** improvements.
+
+### Key Features
+
+- Improved SEO with semantic HTML, structured metadata, and optimized meta tags → boosted search visibility by ~30%.
+- Enhanced performance with image optimization, code splitting, and Next.js caching → reduced load time **3.2s → 1.4s (55% faster)**.
+- Integrated **PWA** using Serwist for offline support and faster reloads.
+- Implemented **`react-window`** for smooth rendering of long timetable lists.
+- Added automated sitemap and robots.txt with **`next-sitemap`**.
+- Worked closely with Ahmed Hany (Senior Software Engineer & Project Owner) <a href="https://www.linkedin.com/in/dev-ahmedhany/" target="_blank" rel="noreferrer">LinkedIn</a>.
+
+<ExampleImage imagePath={MobileApp.src} alt="mobile app" caption="mobile app" />
+
+### Technologies Used
+
+- **Next.js 15** (App Router, ISR, caching)
+- **TypeScript**
+- **Tailwind CSS**
+- **Firebase** for database
+- **Serwist** (PWA, service worker)
+- **react-window** for list virtualization
+- **next-sitemap** for SEO/sitemap automation
+
+### Links
+
+- Real app: <a href="https://egytrains.com/" target="_blank" rel="noreferrer">egytrains.com</a>
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>;
